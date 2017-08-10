@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hubson.swim_zad4cz2.data_entry_fragments.TankEntryFragment">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/typeTankTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Typ czołgu"/>
+
+        <Spinner
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/typeTankSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/typeTanks"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/seatsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Załoga"/>
+        </TableRow>
+
+        <TableRow>
+
+            <SeekBar
+                android:id="@+id/crewSb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="20" />
+
+            <TextView
+                android:id="@+id/crewTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/infoTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="inne informacje"/>
+
+        <EditText
+            android:id="@+id/infoEv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+
+</LinearLayout>

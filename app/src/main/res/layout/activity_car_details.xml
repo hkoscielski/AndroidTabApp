@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hubson.swim_zad4cz2.CarDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/pictureIv"
+                    android:layout_width="250dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/default_car" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/brandTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="end"
+                    android:text="Marka: " />
+
+                <TextView
+                    android:id="@+id/brandNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="start"
+                    android:layout_weight="0.35"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/modelTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Model: "/>
+
+                <TextView
+                    android:id="@+id/modelNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="start"
+                    android:layout_weight="0.35"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/powerTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Moc silnika: "/>
+
+                <TextView
+                    android:id="@+id/powerNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.35"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/yearProdTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Rok produkcji: " />
+
+                <TextView
+                    android:id="@+id/yearProdNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.35"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/typTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Rodzaj nadwozia:" />
+
+                <TextView
+                    android:id="@+id/typNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.35"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/numSeatsTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Liczba miejsc:"
+
+                    />
+
+                <TextView
+                    android:id="@+id/numSeatsNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.35"
+                    android:text=""
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/fuelTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Rodzaj paliwa:" />
+
+                <TextView
+                    android:id="@+id/fuelNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.35"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/extrasTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Dodatki: " />
+
+                <TextView
+                    android:id="@+id/extrasNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.35"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ratingTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="0.65"
+                    android:text="Ocena:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="0.5" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

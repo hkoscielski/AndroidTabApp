@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sort_item"
+        android:title="Sortuj"
+        app:showAsAction="never">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/sort_brand_item"
+                    android:title="Wg marki"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/sort_year_item"
+                    android:title="Wg roku"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/sort_rate_item"
+                    android:title="Wg oceny"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/delete_all_item"
+        android:title="Usuń wszystkie"
+        app:showAsAction="never"/>
+</menu>

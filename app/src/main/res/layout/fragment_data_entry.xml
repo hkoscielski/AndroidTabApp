@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dataEntryMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hubson.swim_zad4cz2.main_activity_fragments.DataEntryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/photoIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/default_car"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/brandEv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Marka" />
+
+                    <EditText
+                        android:id="@+id/modelEv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Model" />
+
+                    <EditText
+                        android:id="@+id/powerEv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:hint="Moc silnika [KM]"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/yearTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rok produkcji"
+                    android:layout_weight="0.4"/>
+
+                <Spinner
+                    android:id="@+id/yearSp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/yearsOfProduction"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp">
+                <RadioGroup
+                    android:id="@+id/colorRg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fuelTypeTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rodzaj paliwa"/>
+
+                    <RadioButton
+                        android:id="@+id/petrolRb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Benzyna"/>
+                    <RadioButton
+                        android:id="@+id/dieselRb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diesel"/>
+                    <RadioButton
+                        android:id="@+id/lpgRb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LPG"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/typeCarTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Typ pojazdu"/>
+
+                <Spinner
+                    android:paddingRight="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/typeCarSp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/typeVehicle"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <FrameLayout
+                    android:id="@+id/typeContener"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/rateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ocena"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:isIndicator="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

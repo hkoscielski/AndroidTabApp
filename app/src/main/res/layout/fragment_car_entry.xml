@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hubson.swim_zad4cz2.data_entry_fragments.CarEntryFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/seatsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Liczba miejsc"/>
+        </TableRow>
+
+        <TableRow>
+
+            <SeekBar
+                android:id="@+id/seatsSb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="9" />
+
+            <TextView
+                android:id="@+id/numOfSeatsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/typeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rodzaj nadwozia"/>
+
+            <Spinner
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/typeSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/carTypes"/>
+        </LinearLayout>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/additionalTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodatkowe wyposażenie"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <CheckBox
+                android:id="@+id/extra1Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABS"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:id="@+id/extra2Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ASR"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <CheckBox
+                android:id="@+id/extra3Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asystent parkowania"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:id="@+id/extra4Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bluetooth"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <CheckBox
+                android:id="@+id/extra5Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hak"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:id="@+id/extra6Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Klimatyzacja"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <CheckBox
+                android:id="@+id/extra7Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przyciemniane szyby"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:id="@+id/extra8Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Światła LED"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <CheckBox
+                android:id="@+id/extra9Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempomat"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:id="@+id/extra10Cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuner TV"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
